@@ -1,0 +1,68 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\title{Your Paper}
+
+\author{You}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Your abstract.
+\end{abstract}
+
+\section{3-Hand manipulation}
+
+\subsection{Introduction}
+
+This paper presents a tool that allows to 2 or 3 users to manipulate virtual the same virtual object simultaneously. The 6 freedom degrees can be reproduced.
+
+\subsection{State of the art}
+
+Multi-User interaction tools already exist, but they are limited and not representative of the real world interactions. Some aren't symmetric: the DOF are distributed over the users, like "trackball". Others don't allow one of the DOF (the rotation around the axis defined by two handling hands) or at least don't reproduce it in a realistic way, like "SkeweR". By the way, the good ways to combine two interactions change from an application to another (ex : adding, compute the mean).
+
+The determination of the sixth DOF is impossible because of the number of contact points, which is only 2. Therefore, it's impossible to generate forces able to make the object rotate around the defined axis.
+
+\subsection{Solution}
+
+The simple solution is to define a third point of handling. Now we have a plane and therefore a possible change of orientation. This rotation is computed as the combination of two (sufficient) rotations.
+
+\section{Exchange of avatars}
+
+\subsection{Introduction}
+
+This paper presents and compares several ways to represent an exchange of avatars, for the actors populating the virtual environment to be aware of the exchange. Two cases are considered: if the user to be notified is involved in the exchange or not. One of the conclusions of the experiments is that it's not necessary to perform a visual feedback of the exchange even if it's more efficient.
+
+\subsection{State of the art}
+
+Exchange of avatar already has a lot of applications. In video games, a player can enhance his game experience by changing of character. In collaborative training, switching roles allows a trainee to understand the work as a whole and reinforces the team cohesion. Other researches studied the virtual body takeover sensation, which must be taken into account when you change your virtual body. However, the perception of the exchange in itself has not be studied before this paper.
+
+\subsection{Solution}
+
+\subsubsection{Formalisation}
+As it was already explained, two points of view are considered: the point of view of a user witnessing the exchange and the one of a user experiencing it. For both cases, the interest of being aware of the exchange is obvious, since all users are likely to interact with each others and as a consequence being able to know which user is using which avatar.
+
+For each exchange, the user experience was evaluated through two criteria:
+\begin{description}
+	\item[Understanding:] how difficult it is for the user to be aware of the exchange, in terms of time, feelings and errors (how many time a user refers to an avatar $A$ believing it is owned by the user 1 whereas it is owned by the user 2).
+	\item[Perception:] how pleasant the exchange is for the user.
+\end{description}
+
+\subsubsection{Evaluation}
+
+\paragraph{Witnessing exchange test}
+\begin{description}
+	\item[Data:] 
+\end{description}
+
+\paragraph{Triggering exchange test}
+
+\end{document}
