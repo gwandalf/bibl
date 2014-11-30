@@ -98,4 +98,21 @@ Various show-through techniques don't respect the integrity of the user experien
 	\item[Results:] global efficiency was mainly due to the training effect (taken into account in the experiment design). There is very few influence due to the technique because the users learn how to optimize their performances in all cases. Obviously, walking a bit more is required for the \textit{None} technique, but it doesn't affect the efficiency. It is a thing important to note, because it proves that all the techniques are good at giving a good perception and assimilation of the 3D environment. According to the users, the show-through techniques are better for comfort and collaborative tasks and the annoyance due to close positions are confirmed.
 \end{description}
 
+\section{\#SEVEN}
+
+\subsection{Introduction}
+
+This paper presents a sensor effector model allowing to execute complex scenarios in collaborative virtual environments. These scenarios can be made of parallel action executions or even branched execution, \textit{i.e} performing an action can lead to trigger the execution of several actions in parallel and the triggering of an action can require the ending of several actions. The tasks can be parametrizable to be either very precisely defined or very opened. The environment behaviour must also be described. As this type of application is made for collaborative training, each user must have a defined role and there is to be a team organisation. There is also an expert who defines the tasks and their organisation.
+
+\subsection{State of the art}
+
+Scenario model systems exist. They often use graph-like representation, like Petri nets. Several aspects defined in the previous section are covered by theses tools, but separately (some tools focus on how to model the "task performing", others on defining complex scenarios). Two important aspects, the "training driving" and the collaborative aspect are poorly handled in general, regarding the needs described above.
+
+\subsection{Solution}
+
+\subsubsection{Formalism}
+Petri nets are used in order to model the scenario proceedings. The events represent transitions in the scenario and places can be in fact sub-scenarios (and therefore Petri nets themselves). Such places transfer received tokens to their initial places and when these tokens reach the ending places, they are "merged" and transferred to the event following the "meta" place.
+
+Each event of the Petri nets system  is connected to a sensor which listen to the VE (Virtual Environment) and fires the event when each upstream places hold a token and a specific condition related to the VE is verified. In the same way, each event is connected to an effector which triggers the event resulting effect on the VE.
+
 \end{document}
