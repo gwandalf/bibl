@@ -13,4 +13,5 @@
 \contentsline {section}{\numberline {3}Goals}{2}
 \contentsline {paragraph}{Directives}{2}
 \contentsline {paragraph}{Invasive aspects}{2}
+\contentsline {paragraph}{Collaboration}{3}
 \contentsline {section}{\numberline {4}Conclusion}{3}
