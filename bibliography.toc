@@ -12,7 +12,7 @@
 \contentsline {subsection}{\numberline {2.4}Scenario design}{2}
 \contentsline {section}{\numberline {3}Goals}{2}
 \contentsline {paragraph}{Directives}{2}
-\contentsline {paragraph}{Invasive aspects}{2}
+\contentsline {paragraph}{Invasive aspects}{3}
 \contentsline {paragraph}{Collaboration}{3}
 \contentsline {paragraph}{Awareness of the coach presence and power}{3}
-\contentsline {section}{\numberline {4}Conclusion}{3}
+\contentsline {section}{\numberline {4}Conclusion}{4}
