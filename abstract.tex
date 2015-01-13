@@ -207,4 +207,13 @@ Two constraints must be checked in order to guarantee the system viability:
 
 \paragraph{Global agreement on simultaneity} Given two actions performed by two different users, all the object replications must "agree" on whether they are simultaneous or not. The solution is that users transparently subscribe or unsubscribe to the object to manipulate (note that this information must be synchronized on all the copies of the object). Then, the object itself "decides" on wheter two or more actions are simultaneous and send this number to all its copies, that wait for all the actions to be transmitted. Some actions don't cause any change (e.g holding an object without moving), so the system send a special value in order to inform that a "passive action occured".
 
+\subsection{Critics}
+\begin{enumerate}
+	\item Using more than two or three objects seems to be unfeasible, because of the high colision detection time.
+	\item The use of undeterministic functions in order to compute the object transformations invalidates the assumption that sending data in the same order produces the same effects on all the copies. It is important when an action too complex to model by laws of physics occurs, e.g the throwing of a coin. In that case, it is better to update the object copies.
+	\item The paper doesn't address the concept of a super-user with powers going beyond laws of pysics (level 2.2). The problem is not so trivial if some users are "simple mortals" while others are "super-men". \textbf{Action metaphors} are to be defined for super-actions which are suddens and that anihilate all the simple-users efforts, like a teleportation of the object.
+	\item Some users might be intentionally invisible. In this case, the metaphors have to be changed.
+	\item Users could control results ore another user performance. In this case, models have to be made for the users too (and not only the objects)
+\end{enumerate}
+
 \end{document}
