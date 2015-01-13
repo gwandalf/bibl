@@ -1,5 +1,4 @@
 Papers*
-*.pdf
-*.sty
+depot
 *.log
-*.gz
+*.toc
