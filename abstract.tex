@@ -200,4 +200,11 @@ There are two possibilities in order to preserve an object consistency on all th
 	\item Replicate the calculation: the physical models are all designed in such a way that all computers compute the same transformations with respect to a given combined interaction.
 \end{enumerate}
 
+\subsection{Coordination of the system}
+Two constraints must be checked in order to guarantee the system viability:
+
+\paragraph{Complete order on sent data} All the replications of an object must receive manipulation data in the same order. Indeed, the same code will produce the same results if the data is input has the same order. It's up to the model of the object to guarantee this ordering constraint.
+
+\paragraph{Global agreement on simultaneity} Given two actions performed by two different users, all the object replications must "agree" on whether they are simultaneous or not. The solution is that users transparently subscribe or unsubscribe to the object to manipulate (note that this information must be synchronized on all the copies of the object). Then, the object itself "decides" on wheter two or more actions are simultaneous and send this number to all its copies, that wait for all the actions to be transmitted. Some actions don't cause any change (e.g holding an object without moving), so the system send a special value in order to inform that a "passive action occured".
+
 \end{document}
