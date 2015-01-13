@@ -171,6 +171,18 @@ Text annotations are easily storable. However, they require a support, like a ta
 \subsection{Introduction}
 The paper presents a framework which goal is to enable collaborative manipulation in VE. Collaboration levels are to be defined.
 
+\subsection{Levels of collaboration}
+\paragraph{Level 1} Representation of the users (e.g avatars).
+\paragraph{Level 2} The users can interact with the objects of the scene individually. This level can be divided into two sub-levels:
+\begin{enumerate}
+	\item The interactions are constrained: users can do some actions but with some limitations, e.g users can move some objects but not all and can't create or destruct these objects.
+	\item The interactions are not constrained: users have a kind of unlimited power with the scene, e.g they can desctruct and create objects and walls, as well as make them translate.
+\end{enumerate}
 
+\paragraph{Level 3} Two or more users can interact with the same object at the same time. One more time, this level can be subdivided into to sub-levels:
+\begin{enumerate}
+	\item The cooperating users can perform idependant actions on the same object, e.g one can change the color of an object while the other one changes its location.
+	\item The cooperating users can perform codependant actions on the same object, e.g the two users changes the color at the same time the color of an object. In that case, the system preserves the integrity of the object by using a synchronisation mechanism.
+\end{enumerate}
 
 \end{document}
