@@ -100,6 +100,7 @@ Several tools were designed in order to improve the "vision power" of a virtual 
 
 \subsubsection{Show-Through techniques}
 Various show-through techniques don't respect the integrity of the user experience, because the scene structure has to be modified, or because the perception of the environment is disturbed. The two that were selected for the experiments were \textit{Transparency} and \textit{Cutaway}, because they only affect the alpha of the object (i.e the transparency). The first one only make the pointed object become transparent around the pointer (the ray of light) and the second one make the zone become invisible.
+A solution can be to use a mush larger ray coming from above, evnetually with a spatialized sound pitch.
 
 \subsubsection{Experiments}
 \begin{description}
@@ -131,7 +132,21 @@ Each event of the Petri nets system  is connected to a sensor which listen to th
 
 Each token holds a set of actor identifiers. This set can be changed through a related event execution. Therefore, actors assigned to an interaction (\textit{i.e}, an event) can be known and are definable in the scenario.
 
-Each actor is associated to a set of assignments which define the actions he can perform. Effectors can remove (resp. add) some assignations from (resp. to) an actor. 
+Each actor is associated to a set of assignments which define the actions he can perform. Effectors can remove (resp. add) some assignations from (resp. to) an actor.
+
+\subsection{Critics and proposals}
+Three cases should be considered:
+\begin{enumerate}
+	\item There is no scenario at all: the users can do what they want to. Nothing is ordered, there is not a special combination of events which lead to a wanted result. An example is a VE that the users can explore and where they can manipulate some objects, only for the pleasure to explore it.
+	\item There is an underlying scenario but nothing in order to manage its structure. The user has to perform a sequence of tasks in order to achieve a goal but the system and possibilities don't evolve with the achievement steps.
+	\item The scenario is well defined and controlled with an adequated structure that allows much more complexity. The tool presented there is an example.
+\end{enumerate}
+
+One of the interests of the second type of VR applications is to evaluate the user with respect to his respect of the underlying scenario. An example is an application in which the user is ordered by a trainer to perform a sequence of tasks, letting him the possibility to perform them in a wrong order or to give up to the more difficult ones, and evaluating his closeness to the good sequence.
+
+\#SEVEN is adapted to all these types of applications. The case of super-users and simple-users can be modeled thanks to projections on task asignements (a super-user acts on a Petri Net allowing him to do everything at any time).
+
+However, the definition of role is not adapted to the case of a trainee requesting his trainer to perform a demonstration, i.e to perform a task only in order to show how to do without making the system evolve. Indeed, the trainee and the trainer have the same action possibilities at the same time, but the results of their action won't be the same. It is possible to avoid the problem by defining an equivalent to each trainee's action which is attributed to the trainer and said \textit{"demonstrative"}. The trainer and the trainee don't share any asignement and can evolve in their own Petri Net.
 
 \section{Communication and Awareness}
 
