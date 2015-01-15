@@ -197,9 +197,21 @@ En EV collaboratif ou non, il est essentiel de prendre conscience des événemen
 
 \subsection{Prise de conscience d'événements}
 La prise de conscience des événements se déroulant dans un EV à pour objectif de ne pas perdre les utilisateurs, qui doivent comprendre ce qu'il se passe autour d'eux. Quelques fois, cela peut même avoir une incidence sur les tâches à réaliser. Par exemple, les échanges d'avatars de l'article \cite{avatars} sont importants à prendre en compte pour l'utilisateur car il faut successivement demander de l'aide à des experts précis qui peuvent changer d'avatars plusieurs fois au cours de la simulation. Cependant, ce genre d'événements pouvant se produire n'importe quand et sans raison particulière, il ne peut pas être classé dans les facilitations de tâches car il n'est pas destiné à guider l'utilisateur.
+\\
 
+Les faits et événements peuvent être regroupés en différentes catégories (voir \cite{survey})~:
+\begin{itemize}
+	\item \textbf{les utilisateurs~:} il faut pouvoir retranscrire leurs activités. Pour cela, les supports des métaphores sont leurs avatars. Un cas d'usage serait le fait de mettre en évidence un avatar qui a un rôle particulier dans l'environnement, par le moyen d'une icône placée au-dessus de lui par exemple.
+	\item \textbf{l'environnement virtuel~:} des objets ou des zones de la scène peuvent se caractériser par leur état. Dans certaines applications, certains objets sont manipulables et d'autres non. Il peut alors être intéressant de coder cette information par un code couleur.
+	\item \textbf{l'environnement physique~:} il ne faut pas oublier que les utilisateurs évoluent avant tout dans un environnement réel constitué d'obstacles, par exemple les murs dans un système CAVE ou les autres utilisateurs. A défaut de pouvoir éviter les collisions, Il faut au moins diminuer les risques. Une possibilité est d'afficher un message de prévention lorsqu'un utilisateur est trop prêt d'un mur, ou une barrière virtuelle destinée à dissuader l'utilisateur, comme présenté sur la figure \ref{fig:barrier}.
+	\item \textbf{Les erreurs internes~:} certaines erreurs du système peuvent introduire des incohérences dans l'EV. C'est notamment le cas lors de problèmes de réseau pour un EVC~: si le système chargé de gérer un objet ou un avatar particulier ne communique plus de données, les interactions qu'auraient alors les utilisateurs avec cet avatar ou cet objet seraient incohérentes. Il peut y avoir aussi un déphasage entre ce que voient deux utilisateurs différents. Dans ces deux cas, il est important de faire prendre conscience de l'anomalie, en gelant l'objet par exemple.
+\end{itemize}
 
-
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{res/barrier}
+\caption{\label{fig:barrier}Barrière de dissuasion pour éviter une collision avec le mur réel \cite{survey}.}
+\end{figure}
 
 \section{Coopération}
 
@@ -270,6 +282,7 @@ Several perception aspects can be evaluated thanks to these tests: the annoyance
 
 \begin{thebibliography}{1}
 	\bibitem{avatars} LOPEZ, Thomas, BOUVILLE, Rozenn, LOUP-ESCANDE, Emilie, et al. \textit{Exchange of avatars: Toward a better perception and understanding. Visualization and Computer Graphics, IEEE Transactions on}, 2014, vol. 20, no 4, p. 644-653.
+	\bibitem{survey} NGUYEN, Thi Thuong Huyen, DUVAL, Thierry, et al. A Survey of Communication and Awareness in Collaborative Virtual Environments. In : \textit{2014 International Workshop on Collaborative Virtual Environments (3DCVE)}. 2014.
 \end{thebibliography}
 
 \end{document}
