@@ -191,17 +191,8 @@ General remark:
 
 En EV collaboratif ou non, il est essentiel de prendre conscience des événements extérieurs, qu'ils soient directement liés aux tâches de l'utilisateur ou pas. La prise de conscience se fait principalement à l'aide de métaphores. On distingue notamment deux types de prises de conscience~: la prise de conscience d'événement ou de faits généraux qui ne sont pas directement liés à une tâche à réaliser en particulier et la prise de conscience destinée à faciliter un tâche donnée.
 
-\subsection{Facilitation de tâches}
-%Show-Through techniques.
-%Exchange of avatars.
-Lorsqu'un utilisateur doit effectuer une tâche précise, par exemple atteindre une zone cible, il peut être guidé au moyen de métaphores. Ces indications ont pour but d'améliorer la performance d'un utilisateur ou de le diriger plus rapidement vers les points d'intérêt plutôt que de le laisser perdre du temps en cherchant par lui-même.
-\\
-
-Certains guidages ont un but purement didactique, c'est à dire qu'ils s'utilisent durant une phase d'entraînement pour apprendre à l'utilisateur comment effectuer une tâche. Un bon exemple est celui qui est cité dans l'article \cite{show-through}, où un entraîneur montre à un apprenti des pièces de moteur de voiture en les mettant en évidence\footnote{La technique est alors un peu particulière car elle consiste simplement à rendre invisibles ou transparents les obstacles qui occultent la pièce du champ de vision de l'apprenti.}. L'apprenti subit ensuite une phase d'évaluation au cours de laquelle il tente de retrouver les pièces successivement montrées sans avoir recours à la mise en évidence. D'autres guidages sont inhérents à la tâche à effectuer et le fait de les enlever perdrait l'utilisateur, même très expérimenté. Un exemple est celui qui est reporté dans l'article \cite{3-hand}, qui montre une technique de manipulation d'objet avec 6 Degrés De Liberté (DDL) à base de 3 points de contact. Ces points sont représentés par des boules rouges. Leur absence empêcherait d'avoir un repère spatial pour maîtriser correctement la manipulation.
-\\
-
 \subsection{Prise de conscience d'événements}
-La prise de conscience des événements se déroulant dans un EV à pour objectif de ne pas perdre les utilisateurs, qui doivent comprendre ce qu'il se passe autour d'eux. Quelques fois, cela peut même avoir une incidence sur les tâches à réaliser. Par exemple, les échanges d'avatars de l'article \cite{avatars} sont importants à prendre en compte pour l'utilisateur car il faut successivement demander de l'aide à des experts précis qui peuvent changer d'avatars plusieurs fois au cours de la simulation. Cependant, ce genre d'événements pouvant se produire n'importe quand et sans raison particulière, il ne peut pas être classé dans les facilitations de tâches car il n'est pas destiné à guider l'utilisateur.
+La prise de conscience des événements se déroulant dans un EV à pour objectif de ne pas perdre les utilisateurs, qui doivent comprendre ce qu'il se passe autour d'eux. Quelques fois, cela peut même avoir une incidence sur les tâches à réaliser. Par exemple, les échanges d'avatars de l'article \cite{avatars} sont importants à prendre en compte pour l'utilisateur car il faut successivement demander de l'aide à des experts précis qui peuvent changer d'avatars plusieurs fois au cours de la simulation. Cependant, ce genre d'événements pouvant se produire n'importe quand et sans raison particulière, il ne peut pas être classé dans les facilitations de tâches (voir section \ref{subsec:facilitation}) car il n'est pas destiné à guider l'utilisateur.
 \\
 
 Les faits et événements peuvent être regroupés en différentes catégories (voir \cite{survey})~:
@@ -219,7 +210,7 @@ Les faits et événements peuvent être regroupés en différentes catégories (
 \caption{\label{fig:barrier}Barrière de dissuasion pour éviter une collision avec le mur réel \cite{survey}.}
 \end{figure}
 
-Quelque soit le type de métaphore à mettre en œuvre, il faut toujours faire un compromis entre la qualité de la métaphore et son coût. La qualité d'une métaphore se mesure par sa capacité à transmettre une information correcte, compréhensible et complète, ainsi que par son influence sur le sentiment d'immersion éprouvé par les utilisateurs. Le coût inclut bien sûr la consommation de ressources, mais se caractérise surtout par la gêne que peut introduire une métaphore. Par exemple, dans le cas d'un objet vu sous différents états selon les utilisateurs à cause de problèmes liés au réseau, une solution consiste à faire apparaître à côté de l'objet un fantôme par état différent. Cependant, faire apparaître trop d'états peut encombrer l'espace, ce qui n'est pas souhaitable.
+Quelque soit le type de métaphore à mettre en œuvre, il faut toujours faire un compromis entre la qualité de la métaphore et son coût. La qualité d'une métaphore se mesure par sa capacité à transmettre une information correcte, compréhensible et complète, ainsi que par son influence sur le sentiment d'immersion éprouvé par les utilisateurs. Le coût inclut bien sûr la consommation de ressources, mais se caractérise surtout par la distraction inutile que peut introduire une métaphore, ou l'encombrement de la scène. Par exemple, dans le cas d'un objet vu sous différents états selon les utilisateurs à cause de problèmes liés au réseau, une solution consiste à faire apparaître à côté de l'objet un fantôme par état différent \cite{survey}. Cependant, faire apparaître trop d'états peut encombrer l'espace, ce qui n'est pas souhaitable.
 \\
 
 Un exemple qui montre bien les différents niveaux de métaphores privilégiant soit certains critères de qualité, soit un faible coût est celui de l'échange d'avatars de \cite{avatars}. Une des expériences présentées consiste à tester différentes métaphores permettant de prendre conscience d'un échange d'avatars en tant que témoin extérieur à l'échange. Le témoin doit réaliser une séquence d'opérations de maintenance sur une voiture. Certaines opérations requièrent l'expérience d'un expert incarnant un avatar. Il y a plusieurs experts à appeler au cours de la simulation et ces derniers échangent régulièrement leurs avatars. Pour faciliter la compréhension, chaque expert est associé à une couleur. Trois métaphores différentes sont testées~:
@@ -234,6 +225,28 @@ La vidéo \texttt{http://youtu.be/Yu4YpGzKXes} montre un exemple d'échange pour
 
 Les compromis à faire dépendent beaucoup du type d'événement ou de fait à représenter. Pour apporter des informations sur un objet de l'EV, une bonne solution consiste à jouer sur sa couleur ou sa transparence, car cela n'encombre pas l'EV et permet de bien identifier quel objet est concerné. La difficulté et alors de choisir une couleur ou un degré de transparence qui n'altère pas la perception de l'environnement. Par exemple, il n'est pas souhaitable de faire disparaître complètement un mur occultant une zone d'intérêt, car cela risque de faire oublier la présence du mur. Il vaut mieux en rendre un pan moyennement transparent. Dans le cas de la remontée d'erreurs internes ou d'événements de faible importance, il semble à priori plus souhaitable d'avoir recours à des popups discrètes plutôt que d'encombrer l'EV qui sert de support direct aux informations plus importantes.
 
+\subsection{Facilitation de tâches}
+\label{subsec:facilitation}
+%Show-Through techniques.
+%Exchange of avatars.
+Lorsqu'un utilisateur doit effectuer une tâche précise, par exemple atteindre une zone cible, il peut être guidé au moyen de métaphores. Ces indications ont pour but d'améliorer la performance d'un utilisateur ou de le diriger plus rapidement vers les points d'intérêt plutôt que de le laisser perdre du temps en cherchant par lui-même.
+\\
+
+Certains guidages ont un but purement didactique, c'est à dire qu'ils s'utilisent durant une phase d'entraînement pour apprendre à l'utilisateur comment effectuer une tâche. Un bon exemple est celui qui est cité dans l'article \cite{show-through}, où un entraîneur montre à un apprenti des pièces de moteur de voiture en les mettant en évidence\footnote{La technique est alors un peu particulière car elle consiste simplement à rendre invisibles ou transparents les obstacles qui occultent la pièce du champ de vision de l'apprenti.}. L'apprenti subit ensuite une phase d'évaluation au cours de laquelle il tente de retrouver les pièces successivement montrées sans avoir recours à la mise en évidence. D'autres guidages sont inhérents à la tâche à effectuer et le fait de les enlever perdrait l'utilisateur, même très expérimenté. Un exemple est celui qui est reporté dans l'article \cite{3-hand}, qui montre une technique de manipulation d'objet avec 6 Degrés De Liberté (DDL) à base de 3 points de contact. Ces points sont représentés par des boules rouges. Leur absence empêcherait d'avoir un repère spatial pour maîtriser correctement la manipulation.
+\\
+
+Les métaphores de guidage indiquent en général soit directement un objet ou une zone cible (par mise en évidence), soit la direction vers la cible. Dans tous les cas, Le critère recherché permettant d'évaluer la métaphore est son efficacité, c'est à dire sa capacité à rendre la tâche plus facile. Les paramètres que l'on recherche à minimiser sont le temps d'exécution de la tâche et le niveau de stress ou de fatigue que la métaphore induit. Ces critères sont différents de ceux qui permettent d'évaluer une métaphore représentant un événement ou un fait non directement corrélé à la tâche~: ce que l'on cherchait à minimiser, c'était la distraction ou l'encombrement qu'une métaphore induisait, ce qui pouvait effectivement gêner l'utilisateur dans le cadre de l'exécution d'une tâche "plus importante" que ce qui se passe autour. Dans le cas d'une métaphore de guidage, la distraction est a priori petite par rapport à la concentration induite. Il est plus important de vérifier que cette concentration n'est pas accompagnée d'effets de bord. Par exemple, \cite{show-through} teste l'influence de l'absence de métaphore pour mettre en évidence les objets, ce qui oblige l'apprenti à se déplacer jusqu'à l'entraîneur pour regarder par-dessus son épaule. Ceci introduit une gêne due à la proximité (voir la section \ref{sec:social}), ce qui n'est pas souhaitable.
+
+
+
+\begin{comment}
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{res/light_source}
+\caption{\label{fig:light-source}Éclairage d'un chemin et assombrissement des alentours \cite{thesis}.}
+\end{figure}
+\end{comment}
+
 \section{Coopération}
 
 \subsection{Manipulation d'objets}
@@ -243,7 +256,7 @@ Les compromis à faire dépendent beaucoup du type d'événement ou de fait à r
 Communication and awareness (written communication).
 
 \section{Social invasive aspects}
-
+\label{sec:social}
 %Important and short (1p)
 
 \subsection{Physical actor}
@@ -306,6 +319,7 @@ Several perception aspects can be evaluated thanks to these tests: the annoyance
 	\bibitem{survey} NGUYEN, Thi Thuong Huyen, DUVAL, Thierry, et al. A Survey of Communication and Awareness in Collaborative Virtual Environments. In : \textit{2014 International Workshop on Collaborative Virtual Environments (3DCVE)}. 2014.
 	\bibitem{show-through} ARGELAGUET SANZ, Fernando, KUNERT, André, KULIK, Alexander, et al. Improving co-located collaboration with show-through techniques. 2010.
 	\bibitem{3-hand} AGUERRECHE, Laurent, DUVAL, Thierry, LÉCUYER, Anatole, et al. Short paper: 3-hand manipulation of virtual objects. JVRC 2009, 2009.
+	\bibitem{thesis} NGUYEN, Thi Thuong Huyen. \textit{Proposition of new metaphors and techniques for 3D interaction and navigation preserving immersion and facilitating collaboration between distant users}, PhD thesis, 2014.
 \end{thebibliography}
 
 \end{document}
