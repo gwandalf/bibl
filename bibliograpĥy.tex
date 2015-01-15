@@ -203,6 +203,7 @@ Les faits et événements peuvent être regroupés en différentes catégories (
 \begin{itemize}
 	\item \textbf{les utilisateurs~:} il faut pouvoir retranscrire leurs activités. Pour cela, les supports des métaphores sont leurs avatars. Un cas d'usage serait le fait de mettre en évidence un avatar qui a un rôle particulier dans l'environnement, par le moyen d'une icône placée au-dessus de lui par exemple.
 	\item \textbf{l'environnement virtuel~:} des objets ou des zones de la scène peuvent se caractériser par leur état. Dans certaines applications, certains objets sont manipulables et d'autres non. Il peut alors être intéressant de coder cette information par un code couleur.
+	\item \textbf{les interactions~:} lorsqu'un utilisateur interagit avec un objet, il peut être utile de représenter cette information par un lien entre l'utilisateur et l'objet.
 	\item \textbf{l'environnement physique~:} il ne faut pas oublier que les utilisateurs évoluent avant tout dans un environnement réel constitué d'obstacles, par exemple les murs dans un système CAVE ou les autres utilisateurs. A défaut de pouvoir éviter les collisions, Il faut au moins diminuer les risques. Une possibilité est d'afficher un message de prévention lorsqu'un utilisateur est trop prêt d'un mur, ou une barrière virtuelle destinée à dissuader l'utilisateur, comme présenté sur la figure \ref{fig:barrier}.
 	\item \textbf{Les erreurs internes~:} certaines erreurs du système peuvent introduire des incohérences dans l'EV. C'est notamment le cas lors de problèmes de réseau pour un EVC~: si le système chargé de gérer un objet ou un avatar particulier ne communique plus de données, les interactions qu'auraient alors les utilisateurs avec cet avatar ou cet objet seraient incohérentes. Il peut y avoir aussi un déphasage entre ce que voient deux utilisateurs différents. Dans ces deux cas, il est important de faire prendre conscience de l'anomalie, en gelant l'objet par exemple.
 \end{itemize}
@@ -224,6 +225,9 @@ Un exemple qui montre bien les différents niveaux de métaphores privilégiant 
 \end{enumerate}
 
 La vidéo \texttt{http://youtu.be/Yu4YpGzKXes} montre un exemple d'échange pour chaque métaphore. Les critères de qualité et de coût ont étés évalués par le moyen d'un questionnaire, sur une population de test composée de 54 participants divisé en trois groupes (un pour chaque métaphore). Chaque critère est évalué par une ou plusieurs affirmations (e.g "La métaphore est facile à comprendre" ou "La métaphore distrait de la tâche") notées par un degré de satisfaction allant de 1 à 5. les résultats révèlent entre autres que même si \textit{Ghosts} est jugée de bien meilleure qualité que \textit{Popup} sur tous les critères, \textit{Popup} est la métaphore qui donne le meilleur temps d'exécution des tâches. \textit{Ghosts} est aussi utilisée dans une autre expérience de l'article, qui compare des métaphores représentant un échange d'avatars dans lequel l'utilisateur est impliqué. Elle est alors considérée par une partie des utilisateurs comme étant trop distrayante, ce qui rentre dans les critères de coût.
+\\
+
+Les compromis à faire dépendent beaucoup du type d'événement ou de fait à représenter. Pour apporter des informations sur un objet de l'EV, une bonne solution consiste à jouer sur sa couleur ou sa transparence, car cela n'encombre pas l'EV et permet de bien identifier quel objet est concerné. La difficulté et alors de choisir une couleur ou un degré de transparence qui n'altère pas la perception de l'environnement. Par exemple, il n'est pas souhaitable de faire disparaître complètement un mur occultant une zone d'intérêt, car cela risque de faire oublier la présence du mur. Il vaut mieux en rendre un pan moyennement transparent. Dans le cas de la remontée d'erreurs internes ou d'événements de faible importance, il semble à priori plus souhaitable d'avoir recours à des popups discrètes plutôt que d'encombrer l'EV qui sert de support direct aux informations plus importantes.
 
 \section{Coopération}
 
@@ -295,6 +299,7 @@ Several perception aspects can be evaluated thanks to these tests: the annoyance
 \begin{thebibliography}{1}
 	\bibitem{avatars} LOPEZ, Thomas, BOUVILLE, Rozenn, LOUP-ESCANDE, Emilie, et al. \textit{Exchange of avatars: Toward a better perception and understanding. Visualization and Computer Graphics, IEEE Transactions on}, 2014, vol. 20, no 4, p. 644-653.
 	\bibitem{survey} NGUYEN, Thi Thuong Huyen, DUVAL, Thierry, et al. A Survey of Communication and Awareness in Collaborative Virtual Environments. In : \textit{2014 International Workshop on Collaborative Virtual Environments (3DCVE)}. 2014.
+	\bibitem{show-through} ARGELAGUET SANZ, Fernando, KUNERT, André, KULIK, Alexander, et al. Improving co-located collaboration with show-through techniques. 2010.
 \end{thebibliography}
 
 \end{document}
