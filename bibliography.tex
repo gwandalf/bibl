@@ -246,14 +246,14 @@ Dans le cas de métaphores de guidage introduites par un entraîneur, la percept
 \caption{\label{fig:light-source}Éclairage d'un chemin et assombrissement des alentours \cite{thesis}. Vue de l'apprenti (à gauche) et de l'entraîneur (à droite).}
 \end{figure}
 
-\section{Coopération}
+\section{Intéragir avec l'environnement}
 
-
+La majorité des applications de RV introduisent la possibilité d'interagir avec les objets de la scène, ce qui sert à l'accomplissement de t\^aches. L'interaction la plus classique consiste à manipuler des objets, par exemple pour les transporter ou changer leur position.
 
 \subsection{Manipulation d'objets}
 La manipulation d'objets en coopération est une opération qui met en jeu des interactions complexes entre les utilisateurs et l'objet manipulé. D'une part, il faut que tous les utilisateurs aient une bonne perception de l'objet et des points de contacts impliqués pour leur interaction. D'autre part, chaque utilisateur doit avoir une bonne perception de l'influence des autres utilisateurs sur l'objet manipulé. Dans la vraie vie, ces informations sont transmises par le ressenti des forces en action, par exemple dans le cas du déplacement d'un meuble lourd, les utilisateurs ressentent les forces exercées par chaque acteur. En EVC, le retour de force n'est possible qu'avec certains appareils. Lorsque cela est nécessaire, ces informations sont retrancrites sous forme de métaphores visuelles particulières représentant les interactions et leurs paramètres (e.g intensité et direction de la force). Comme la manipulation en coopération est un problème d'EVC, il faut gérer la communication des informations entre chaque utilisateur, ainsi que la concordance entre l'état de l'objet et celui de chaque utilisateur.
 
-\subsubsection{Interactions réalistes}
+\subsubsection{Exploitation des 6DDL}
 L'un des problèmes les plus étudiés en manipulation d'objet est l'exploitation des 6 DDL (transitions et rotations selon les trois axes du repère 3D de l'objet). En effet, la saisie d'objets se fait la plupart du temps avec des appareils à un point de contact, ce qui est différent de l'utilisation de la main dans le monde réel, car la main permet de définir une multitude de points et de surfaces de contacts. Ainsi, un unique utilisateur manipulant un objet ne peut établir que deux points de contact en même temps (un par main). Ces points définissent alors une droite autour de laquelle il est impossible de tourner (l'image d'une droite par une rotation autour d'elle même est elle même). Seuls 5 DDL sont alors possibles. Ceci ne permet pas d'avoir d'interactions naturelles avec les objets manipulés. Une solution à ce problème est proposée par \cite{3-hand}. Elle consiste à définir trois points de contacts, rendant ansi possible l'exploitation des 6DDL. Cependant, cette manipulation requiert la coppération de deux utilisateurs au moins. Une aletrnative est proposée par \cite{thesis} (section 3). Celle-ci consiste à définir sept points de contact. Ces points sont en réalité décorrélés de l'objet et placé sur un outil, le \textit{7-Handle}, constitué d'un triangle. Les sept points de contact sont les sommets du triangle, les milieux des segments et son centre de gravité. L'outil est associé avec l'objet à manipuler en mettant en correspondance leur centre de gravité. La manipulation se fait alors en deux phases~:
 \begin{enumerate}
 	\item \textbf{Configuration~:} il est possible d'adapter la taille du \textit{7-Handle} et la position des points en fonction de l'objet à manipuler.
@@ -262,10 +262,38 @@ L'un des problèmes les plus étudiés en manipulation d'objet est l'exploitatio
 
 %insérer figure page 61 (chercher la page 67).
 
-\subsubsection{Garantir la cohérence de l'état des objets}
+Dans le cas d'une coopération, la méthode des trois points de contact présentée dans \cite{3-hand} est suffisante.
 
-\subsection{Supports d'information}
-Communication and awareness (written communication).
+\subsubsection{Prendre conscience de l'influence d'un coopérateur}
+Il est important de prendre conscience de l'action d'un coopérateur lors d'une manipulation, car cela permet d'adapter sa propre interaction en conséquence. Un moyen simple de représenter la force exercée par un utilisateur sur un objet est de représenter le vecteur correspondant, avec pour origine le point de contact concerné. Dans certains cas, ce point de contact n'est pas sur l'objet (e.g cas du \textit{7-Handle} \cite{thesis}), ou l'utilisateur contr\^ole ce point de contact au moyen d'un pointeur, la main réelle n'est alors pas en contact direct avec l'objet 3D. Il est donc nécessaire de montrer quel utilisateur contr\^ole quel point de contact. Cela peut se faire au moyen d'un pointeur virtuel relié au point de contact et indiquant la direction de l'opérateur et son identité (par un code couleur), comme c'est le cas dans \cite{3-hand} (voir figure ...). La proximité entre l'appareil et le point de contact est ici également représentée par un code couleur (vert si l'appareil est éloignée, rouge s'il est proche). En effet, une main éloignée du point de contact créé beaucoup d'instabilités. 
+
+%insérer figure 3 de 3-hand
+
+\subsection{Interactions coopératives~: un problème de synchronisation}
+
+La manipulation d'objets n'est pas le seul moyen d'interagir  avec l'environnment. Il est en effet possible d'écrire sur certains objets pour utiliser une communication écrite, utile si tous les utilisateurs ne disposent pas d'appareils de restitution sonore \cite{survey}. Il est aussi possible d'interagir de manière plus surréaliste, en changeant la couleur des objets, en en créant et en en détruisant, ou encore en déplaçant des murs.
+\\
+
+Quelque soit le type d'interaction, la gestion de la coopération ne peut pas se passer de mécanismes de synchronisation. En effet, la transmission des messages sur un réseau peut conduire à des ordres différents de réception et donc à des incohérences entre les états de chaque processus. Dans le cas des EVC, il existe deux possibilités afin de transmettre le changement d'état d'un objet sur le réseau~:
+\begin{enumerate}
+	\item le processus responsable du changement d'état diffuse des copies de l'objet dans son nouvel état;
+	\item le processus responsable du changement d'état diffuse les opérations qui ont conduit au changement d'état, afin qu'elles soient à leur tour appliquées sur chaque copie locale de l'objet.
+\end{enumerate}
+
+En matière de synchronisation des collaborations en EVC, on distingue trois niveaux \cite{margery}~:
+\begin{enumerate}
+	\item Il n'y a pas d'interactions possibles entre les utilisateurs et l'environnement.
+	\item Seules des interactions individuelles sont possibles.
+	\item Des interactions collaboratives sont possibles. On distingue alors de sous cas~: (3.1) seules des interventions indépendantes sont permises en simultané (e.g déplacement et changement de la couleur) ou (3.2) le système gère les interventions interdépendantes (e.g en calculant la couleur moyenne lors d'un changement de couleur).
+\end{enumerate}
+
+Dans le premier cas, il n'y a évidement pas besoin de mécanismes de synchronisation. Dans le deuxième, il faut pourvoir les objets de verrous qui empêchent l'intervention de plus d'une personne sur un objet. C'est une technique défensive, qui permet d'éviter des interactions incohérentes sur un même objet, par exemple deux changements de couleurs divergents simultanés. Le troisième cas est traité dans l'article \cite{margery}. Il faut guarantir deux propriétés~:
+\begin{enumerate}
+	\item Tous les processus doivent s'accorder sur l'ordre d'exécution des opérations sur un même objet.
+	\item Tous les processus doivent s'accorder sur la simultanéité des opérations sur un même objet, c'est à dire que si un processus considère que deux opérations ont eu lieu simultanément, alors tous les processus doivent considérer la même chose.
+\end{enumerate}
+
+La première propriété est garantie à l'aide d'une contrainte qui doit être imposée sur les messages et dont se charge l'objet concerné~: il faut que les messages soient diffusés en ordre complet, c'est à dire que tous les processus les reçoivent dans le même ordre. Si les messages sont les opérations effectuées, alors elles sont prises en compte dans le même ordre par toutes les fonctions de transformation qui sont les mêmes pour tous les processus. Sauf cas (très) exceptionnel, ces fonctions sont détreministes et donnent donc le même résultat pour la même séquence d'opération. Si les messages sont des copies de l'objet, alors la cohérence entre les processus est obtenue de manière évidente.
 
 \section{Aspects sociaux}
 \label{sec:social}
@@ -336,6 +364,7 @@ Les métaphores permettant de guider l'entraîneur ne sont pas évaluées.
 	\bibitem{show-through} ARGELAGUET SANZ, Fernando, KUNERT, André, KULIK, Alexander, et al. Improving co-located collaboration with show-through techniques. 2010.
 	\bibitem{3-hand} AGUERRECHE, Laurent, DUVAL, Thierry, LÉCUYER, Anatole, et al. Short paper: 3-hand manipulation of virtual objects. JVRC 2009, 2009.
 	\bibitem{thesis} NGUYEN, Thi Thuong Huyen. \textit{Proposition of new metaphors and techniques for 3D interaction and navigation preserving immersion and facilitating collaboration between distant users}, PhD thesis, 2014.
+	\bibitem{margery} MARGERY, David, ARNALDI, Bruno, et PLOUZEAU, Noel. \textit{A general framework for cooperative manipulation in virtual environments}. Springer Vienna, 1999.
 \end{thebibliography}
 
 \end{document}
