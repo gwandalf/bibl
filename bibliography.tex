@@ -252,9 +252,17 @@ Dans le cas de métaphores de guidage introduites par un entraîneur, la percept
 
 \subsection{Manipulation d'objets}
 La manipulation d'objets en coopération est une opération qui met en jeu des interactions complexes entre les utilisateurs et l'objet manipulé. D'une part, il faut que tous les utilisateurs aient une bonne perception de l'objet et des points de contacts impliqués pour leur interaction. D'autre part, chaque utilisateur doit avoir une bonne perception de l'influence des autres utilisateurs sur l'objet manipulé. Dans la vraie vie, ces informations sont transmises par le ressenti des forces en action, par exemple dans le cas du déplacement d'un meuble lourd, les utilisateurs ressentent les forces exercées par chaque acteur. En EVC, le retour de force n'est possible qu'avec certains appareils. Lorsque cela est nécessaire, ces informations sont retrancrites sous forme de métaphores visuelles particulières représentant les interactions et leurs paramètres (e.g intensité et direction de la force). Comme la manipulation en coopération est un problème d'EVC, il faut gérer la communication des informations entre chaque utilisateur, ainsi que la concordance entre l'état de l'objet et celui de chaque utilisateur.
-\\
 
+\subsubsection{Interactions réalistes}
+L'un des problèmes les plus étudiés en manipulation d'objet est l'exploitation des 6 DDL (transitions et rotations selon les trois axes du repère 3D de l'objet). En effet, la saisie d'objets se fait la plupart du temps avec des appareils à un point de contact, ce qui est différent de l'utilisation de la main dans le monde réel, car la main permet de définir une multitude de points et de surfaces de contacts. Ainsi, un unique utilisateur manipulant un objet ne peut établir que deux points de contact en même temps (un par main). Ces points définissent alors une droite autour de laquelle il est impossible de tourner (l'image d'une droite par une rotation autour d'elle même est elle même). Seuls 5 DDL sont alors possibles. Ceci ne permet pas d'avoir d'interactions naturelles avec les objets manipulés. Une solution à ce problème est proposée par \cite{3-hand}. Elle consiste à définir trois points de contacts, rendant ansi possible l'exploitation des 6DDL. Cependant, cette manipulation requiert la coppération de deux utilisateurs au moins. Une aletrnative est proposée par \cite{thesis} (section 3). Celle-ci consiste à définir sept points de contact. Ces points sont en réalité décorrélés de l'objet et placé sur un outil, le \textit{7-Handle}, constitué d'un triangle. Les sept points de contact sont les sommets du triangle, les milieux des segments et son centre de gravité. L'outil est associé avec l'objet à manipuler en mettant en correspondance leur centre de gravité. La manipulation se fait alors en deux phases~:
+\begin{enumerate}
+	\item \textbf{Configuration~:} il est possible d'adapter la taille du \textit{7-Handle} et la position des points en fonction de l'objet à manipuler.
+	\item \textbf{Manipulation~:} l'utilisateur peut manipuler les points du \textit{7-Handle}, chacun d'entre eux asservissant un point correspondant de l'objet. Il est posible de verouiller certains points, qui cessent alors de suivre le mouvement en adoptant une position fixe. Cela permet de compenser le manque d'utilisateurs et donc d'exploiter les 6DDL.
+\end{enumerate}
 
+%insérer figure page 61 (chercher la page 67).
+
+\subsubsection{Garantir la cohérence de l'état des objets}
 
 \subsection{Supports d'information}
 Communication and awareness (written communication).
