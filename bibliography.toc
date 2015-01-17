@@ -9,7 +9,5 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Prendre conscience de l'influence d'un coop\IeC {\'e}rateur}{6}
 \contentsline {subsection}{\numberline {3.2}Interactions coop\IeC {\'e}ratives~: un probl\IeC {\`e}me de synchronisation}{6}
 \contentsline {section}{\numberline {4}Aspects sociaux}{8}
-\contentsline {subsection}{\numberline {4.1}Proximit\IeC {\'e} d'acteurs physiques}{8}
-\contentsline {subsection}{\numberline {4.2}M\IeC {\'e}taphores intrusives}{9}
 \contentsline {section}{\numberline {5}Sc\IeC {\'e}nario}{9}
 \contentsline {section}{\numberline {6}Conclusion}{10}
