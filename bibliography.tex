@@ -251,6 +251,7 @@ Dans le cas de métaphores de guidage introduites par un entraîneur, la percept
 La majorité des applications de RV introduisent la possibilité d'interagir avec les objets de la scène, ce qui sert à l'accomplissement de t\^aches. L'interaction la plus classique consiste à manipuler des objets, par exemple pour les transporter ou changer leur position.
 
 \subsection{Manipulation d'objets}
+\label{subsec:manipulation}
 La manipulation d'objets en coopération est une opération qui met en jeu des interactions complexes entre les utilisateurs et l'objet manipulé. D'une part, il faut que tous les utilisateurs aient une bonne perception de l'objet et des points de contacts impliqués pour leur interaction. D'autre part, chaque utilisateur doit avoir une bonne perception de l'influence des autres utilisateurs sur l'objet manipulé. Dans la vraie vie, ces informations sont transmises par le retour des forces, par exemple dans le cas du déplacement d'un meuble lourd, les utilisateurs ressentent les forces exercées par chaque acteur. En EVC, le retour de force n'est possible qu'avec certains appareils. Lorsque cela est nécessaire, ces informations sont retranscrites sous forme de métaphores visuelles particulières représentant les interactions et leurs paramètres (e.g intensité et direction de la force). Comme la manipulation en coopération est un problème d'EVC, il faut gérer la communication des informations entre chaque utilisateur, ainsi que la synchronisation et la cohérence vis-à-vis de l'état de l'environnement vu par chaque utilisateur, qui opèrent potentiellement sur des terminaux différents.
 
 \subsubsection{Exploitation des 6DDL}
@@ -311,14 +312,22 @@ La deuxième propriété s'obtient grâce à un mécanisme d'inscription / dési
 \label{sec:social}
 %Important and short (1p)
 
-\subsection{Acteur physique}
-Show-Through techniques (social protocols).
+Comme vu en section \ref{subsec:facilitation}, la gêne induite par une métaphore est à minimiser. En EVC immersif, il existe une gêne particulière liée à la position des acteurs les par rapport aux autres~: chaque individu définit une zone "intime" autour de lui, dont le rayon varie entre 15cm et 40cm selon les personnes. En règle générale, si une personne pénètre cette zone, cela provoque une réaction de l'individu, qui va du simple recul à un énervement. Cette notion a été introduite par Edward T. Hall dans l'ouvrage \cite{proxemics}. Cette conception de l'espace s'appelle la proxémique. Elle peut être mise en jeu entre deux acteurs physiques, mais aussi dans le cas de métaphores dites intrusives.
+
+\subsection{Proximité d'acteurs physiques}
+En EVC, et particulièrement dans les applications d'apprentissage, il existe plusieurs cas qui impliquent une forte proximité physique entre deux acteurs~: un entraîneur peut avoir besoin de prendre le point de vue se son apprenti si celui-ci demande de l'aide, un apprenti lui-même peut avoir besoin d'observer son entraîneur lors d'une démonstration, deux coopérateurs peuvent avoir besoin de manipuler un même petit objet en même temps... en guise d'exemple, l'article \cite{show-through} présente un cas d'usage mettant en jeu d'une part un apprenti devant apprendre les positions de pièces dans un moteur de voiture, et d'autre part son entraîneur qui lui montre lesdites pièces. Dans certains cas, l'apprenti doit observer par dessus l'épaule de l'entraîneur, ce qui provoque effectivement une gêne pour ce dernier.
+\\
+
+Pour le problème de la manipulation, la solution est d'utiliser des points de contact distants de l'objet (voir la section \ref{subsec:manipulation}). Pour le problème de l'observation, la solution au problème consiste à utiliser un pointeur projetant un rayon de lumière virtuel pour mettre en évidence l'objet. Comme la nécessité de regarder par dessus l'épaule est en général due à un obstacle qui bloque le champ de vision, le rayon doit effacer partiellement l'obstacle, comme cela est présenté dans \cite{show-through}. Cette technique n'améliore pas l'efficacité de l'apprentissage, mais limite au moins la gêne.
 
 \subsection{Métaphores intrusives}
-Intrusive hand and metaphors, to be controlled
+Le problème de proximité physique ne se pose pas si les acteurs ne sont pas physiquement situés dans le même espace immersif. Dans ce cas, il existe la possibilité de changer de point de vue virtuellement comme cela est présenté dans l'expérience de guidage de \cite{thesis} (section 2), ou même d'échanger les avatars.
+\\
+
+Cependant...
 
 \section{Scénario}
-
+%TODO : bien comparer avec l'existant (de manière concise) pour expliquer en quoi #SEVEN est mieux (reprendre l'article)
 En EVC, les utilisateurs ont en général un but à atteindre qui nécessite l'exécution de plusieurs tâches successives. Cependant, tout ne doit pas nécessairement s'opérer de manière linéaire. L'ensemble des utilisateurs peut se scinder en plusieurs groupes qui réaliseront des tâches en parallèle et des choix peuvent être offerts entre plusieurs tâches possibles... ce qui génère des embranchements complexes. On appelle cela un scénario, qu'il faut formaliser afin de gérer efficacement l'enchaînement des tâches. Ainsi, le cycle de vie d'une tâche est constitué des étapes successives "définition, exécution, conséquence". Pour illustrer, considérons un scénario simple constitué de deux tâches~: un utilisateur doit placer une pièce sur un support, puis lui appliquer des transformations. Le moteur de scénario prépare d'abord les commandes pour la première tâche (définition)~: des GI de manipulation (haut, bas, gauche, droite, en avant, en arrière) sont mis en place pour déplacer la pièce à l'aide d'une machine par exemple. Puis l'opérateur exécute les commandes unes à unes afin de placer la pièce sur le support (exécution). Une fois la fin le but atteint, le système désactive les GI (conséquence) et prépare les commandes pour la tâche suivante (définition) et ainsi de suite.
 \\
 
@@ -393,6 +402,7 @@ Détecter le début et la fin d'une activité avec un objet (Margery) ? Comment 
 	\bibitem{margery} MARGERY, David, ARNALDI, Bruno, et PLOUZEAU, Noel. \textit{A general framework for cooperative manipulation in virtual environments}. Springer Vienna, 1999.
 	\bibitem{state-machine} CREMER, James, KEARNEY, Joseph, et PAPELIS, Yiannis. HCSM: a framework for behavior and scenario control in virtual environments. \textit{ACM Transactions on Modeling and Computer Simulation (TOMACS)}, 1995, vol. 5, no 3, p. 242-267.
 	\bibitem{seven} CLAUDE, Guillaume, GOURANTON, Valérie, BERTHELOT, Rozenn Bouville, et al. Short Paper:\# SEVEN, a Sensor Effector Based Scenarios Model for Driving Collaborative Virtual Environment. In : \textit{ICAT-EGVE, International Conference on Artificial Reality and Telexistence, Eurographics Symposium on Virtual Environments}. 2014. p. 1-4.
+	\bibitem{proxemics} E. T. Hall. \textit{The Hidden Dimension}. Doubleday, 1966.
 \end{thebibliography}
 
 \end{document}
