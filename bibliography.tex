@@ -195,12 +195,15 @@ Les EVC pour l'apprentissage impliquent donc une collaboration verticale (entra�
 \\
 
 Nous nous proposons d'étudier un système d'apprentissage en EVC dans lequel l'entraîneur a la possibilité de modifier les paramètres de l'environnement et d'intervenir en tant que "super utilisateur", c'est-à-dire de collaborer avec un apprenti comme le ferait un autre apprenti "normal" dans l'EVC, mais avec la possibilité d'utiliser des "pouvoirs" supplémentaires. Certaines idées seraient de lui laisser la possibilité d'éditer les caractéristiques du scénario en créant et en supprimant des objets, de se téléporter n'importe où dans l'environnement ou encore de prendre momentanément le contrôle de l'avatar de l'apprenti pour faire des démonstrations. Le schéma de principe de la figure \ref{fig:principle} représente l'ensemble des paramètres qu'il faut prendre en compte dans un tel contexte.
+\\
 
-\begin{figure}
+\begin{figure}[!h]
 \centering
 \includegraphics[width=1\textwidth]{res/principe}
-\caption{\label{fig:principle}Schéma de principe du système à étudier.}
+\caption{\label{fig:principle}Schéma de principe du système à étudier. \textbf{Rouge} : prise de conscience, \textbf{Bleu} : interaction avec l'environnement, \textbf{Vert} : scénario, \textbf{Rose} : relations sociales.}
 \end{figure}
+
+Dans une première partie, nous étudierons les différents moyens qu'il existe afin de faciliter la prise de conscience d'événements, de faits, d'instructions de l'entraîneur et de retour de l'apprenti. Nous enchaînerons sur le cas particulier des tâches collaboratives et nous présenterons les moyens à mettre en œuvre pour les synchroniser de manière cohérente entre tous les utilisateurs, dans le cas de sites distants. Ensuite, nous nous pencherons sur les moyens existant pour garantir des interactions entre utilisateurs respectueuses des normes sociales communément admises, notamment le respect d'une certaine zone de discrétion autour de chacun. Enfin, nous indiquerons comment automatiser l'enchaînement intelligent des tâches grâce à un scénario de supervision de l'apprentissage\footnote{A la différence de l'entraîneur qui contrôle des paramètres de l'environnement tels que la luminosité, l'utilisation de certaines métaphores ou la présence ou l'absence de certains objets, le scénario définit l'ordonnancement des tâches. Il peut pour cela activer ou désactiver certaines commandes, dont celles de l'entraîneur. L'entraîneur garde un contrôle sur le scénario en tant qu'éditeur de celui-ci.}.
 
 \section{Prise de conscience}
 
