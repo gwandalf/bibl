@@ -28,6 +28,19 @@ James Cremer, Joseph Kearney, and Yiannis Papelis.
 \newblock {\em ACM Transactions on Modeling and Computer Simulation (TOMACS)},
   5(3):242--267, 1995.
 
+\bibitem[DZ{\etalchar{+}}06]{network-errors}
+Thierry Duval, Chadi Zammar, et~al.
+\newblock Managing network troubles while interacting within collaborative
+  virtual environments.
+\newblock In {\em CSAC}, pages 85--94, 2006.
+
+\bibitem[FBHH99]{fraser}
+Mike Fraser, Steve Benford, Jon Hindmarsh, and Christian Heath.
+\newblock Supporting awareness and interaction through collaborative virtual
+  interfaces.
+\newblock In {\em Proceedings of the 12th annual ACM symposium on User
+  interface software and technology}, pages 27--36. ACM, 1999.
+
 \bibitem[Hal69]{proxemics}
 Edward~T Hall.
 \newblock {\em The hidden dimension}, volume 1990.
@@ -59,5 +72,12 @@ Thi Thuong~Huyen Nguyen.
   and navigation preserving immersion and facilitating collaboration between
   distant users}.
 \newblock PhD thesis, INSA Rennes, 2014.
+
+\bibitem[PBF02]{pinho}
+M{\'a}rcio~S Pinho, Doug~A Bowman, and Carla~MDS Freitas.
+\newblock Cooperative object manipulation in immersive virtual environments:
+  framework and techniques.
+\newblock In {\em Proceedings of the ACM symposium on Virtual reality software
+  and technology}, pages 171--178. ACM, 2002.
 
 \end{thebibliography}

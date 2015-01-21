@@ -4,9 +4,9 @@
 \contentsline {subsection}{\numberline {2.1}Prise de conscience d'\IeC {\'e}v\IeC {\'e}nements}{3}
 \contentsline {subsection}{\numberline {2.2}Facilitation de t\IeC {\^a}ches}{5}
 \contentsline {section}{\numberline {3}Interagir avec l'environnement}{6}
-\contentsline {subsection}{\numberline {3.1}Manipulation d'objets}{6}
+\contentsline {subsection}{\numberline {3.1}Manipulation d'objets}{7}
 \contentsline {subsubsection}{\numberline {3.1.1}Exploitation des 6DDL}{7}
-\contentsline {subsubsection}{\numberline {3.1.2}Prendre conscience de l'influence d'un coop\IeC {\'e}rateur}{7}
+\contentsline {subsubsection}{\numberline {3.1.2}Prendre conscience de l'influence d'un coop\IeC {\'e}rateur}{8}
 \contentsline {subsection}{\numberline {3.2}Interactions coop\IeC {\'e}ratives~: un probl\IeC {\`e}me de synchronisation}{8}
 \contentsline {section}{\numberline {4}Aspects sociaux}{10}
 \contentsline {section}{\numberline {5}Sc\IeC {\'e}nario}{11}
