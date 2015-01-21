@@ -41,6 +41,12 @@ Mike Fraser, Steve Benford, Jon Hindmarsh, and Christian Heath.
 \newblock In {\em Proceedings of the 12th annual ACM symposium on User
   interface software and technology}, pages 27--36. ACM, 1999.
 
+\bibitem[GB95]{massive}
+Chris Greenhalgh and Steven Benford.
+\newblock Massive: a collaborative virtual environment for teleconferencing.
+\newblock {\em ACM Transactions on Computer-Human Interaction (TOCHI)},
+  2(3):239--261, 1995.
+
 \bibitem[Hal69]{proxemics}
 Edward~T Hall.
 \newblock {\em The hidden dimension}, volume 1990.
@@ -52,6 +58,13 @@ Thomas Lopez, Rozenn Bouville, Emilie Loup-Escande, Florian Nouviale,
 \newblock Exchange of avatars: Toward a better perception and understanding.
 \newblock {\em Visualization and Computer Graphics, IEEE Transactions on},
   20(4):644--653, 2014.
+
+\bibitem[LJ96]{calvin}
+Jason Leigh and Andrew~E Johnson.
+\newblock Calvin: an immersimedia design environment utilizing heterogeneous
+  perspectives.
+\newblock In {\em Multimedia Computing and Systems, 1996., Proceedings of the
+  Third IEEE International Conference on}, pages 20--23. IEEE, 1996.
 
 \bibitem[MAP99]{margery}
 David Margery, Bruno Arnaldi, and Noel Plouzeau.
