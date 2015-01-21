@@ -7,7 +7,8 @@
 \contentsline {subsection}{\numberline {3.1}Manipulation d'objets}{7}
 \contentsline {subsubsection}{\numberline {3.1.1}Exploitation des 6DDL}{7}
 \contentsline {subsubsection}{\numberline {3.1.2}Prise en compte de l'influence d'un coop\IeC {\'e}rateur}{9}
-\contentsline {subsection}{\numberline {3.2}Interactions coop\IeC {\'e}ratives~: un probl\IeC {\`e}me de synchronisation}{9}
-\contentsline {section}{\numberline {4}Aspects sociaux}{10}
-\contentsline {section}{\numberline {5}Sc\IeC {\'e}nario}{11}
+\contentsline {section}{\numberline {4}Aspects sociaux}{9}
+\contentsline {section}{\numberline {5}Gestion automatique de l'apprentissage et des interactions collaboratives}{10}
+\contentsline {subsection}{\numberline {5.1}Sc\IeC {\'e}nario d'apprentissage}{10}
+\contentsline {subsection}{\numberline {5.2}Synchronisation des interactions collaboratives}{11}
 \contentsline {section}{\numberline {6}Conclusion}{12}
