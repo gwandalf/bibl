@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: bibliography.aux
+The style file: alpha.bst
+Database file #1: bibliography.bib
+Warning--empty journal in show-through
+You've used 9 entries,
+            2543 wiz_defined-function locations,
+            606 strings with 6208 characters,
+and the built_in function-call counts, 3682 in all, are:
+= -- 344
+> -- 228
+< -- 4
++ -- 86
+- -- 83
+* -- 273
+:= -- 653
+add.period$ -- 27
+call.type$ -- 9
+change.case$ -- 60
+chr.to.int$ -- 9
+cite$ -- 10
+duplicate$ -- 137
+empty$ -- 237
+format.name$ -- 90
+if$ -- 717
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 10
+newline$ -- 49
+num.names$ -- 27
+pop$ -- 67
+preamble$ -- 1
+purify$ -- 72
+quote$ -- 0
+skip$ -- 108
+stack$ -- 0
+substring$ -- 132
+swap$ -- 16
+text.length$ -- 4
+text.prefix$ -- 2
+top$ -- 0
+type$ -- 64
+warning$ -- 1
+while$ -- 32
+width$ -- 14
+write$ -- 115
+(There was 1 warning)

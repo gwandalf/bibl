@@ -1,0 +1,63 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{ASKK{\etalchar{+}}10}
+
+\bibitem[ADL{\etalchar{+}}09]{3-hand}
+Laurent Aguerreche, Thierry Duval, Anatole L{\'e}cuyer, et~al.
+\newblock Short paper: 3-hand manipulation of virtual objects.
+\newblock {\em JVRC 2009}, 2009.
+
+\bibitem[ASKK{\etalchar{+}}10]{show-through}
+Fernando Argelaguet~Sanz, Andr{\'e} Kunert, Alexander Kulik, Bernd Froehlich,
+  et~al.
+\newblock Improving co-located collaboration with show-through techniques.
+\newblock 2010.
+
+\bibitem[CGBA14]{seven}
+Guillaume Claude, Val{\'e}rie Gouranton, Rozenn~Bouville Berthelot, and Bruno
+  Arnaldi.
+\newblock Short paper:\# seven, a sensor effector based scenarios model for
+  driving collaborative virtual environment.
+\newblock In {\em ICAT-EGVE, International Conference on Artificial Reality and
+  Telexistence, Eurographics Symposium on Virtual Environments}, pages 1--4,
+  2014.
+
+\bibitem[CKP95]{state-machine}
+James Cremer, Joseph Kearney, and Yiannis Papelis.
+\newblock Hcsm: a framework for behavior and scenario control in virtual
+  environments.
+\newblock {\em ACM Transactions on Modeling and Computer Simulation (TOMACS)},
+  5(3):242--267, 1995.
+
+\bibitem[Hal69]{proxemics}
+Edward~T Hall.
+\newblock {\em The hidden dimension}, volume 1990.
+\newblock Anchor Books New York, 1969.
+
+\bibitem[LBLE{\etalchar{+}}14]{avatars}
+Thomas Lopez, Rozenn Bouville, Emilie Loup-Escande, Florian Nouviale,
+  Val{\'e}rie Gouranton, and Bruno Arnaldi.
+\newblock Exchange of avatars: Toward a better perception and understanding.
+\newblock {\em Visualization and Computer Graphics, IEEE Transactions on},
+  20(4):644--653, 2014.
+
+\bibitem[MAP99]{margery}
+David Margery, Bruno Arnaldi, and Noel Plouzeau.
+\newblock {\em A general framework for cooperative manipulation in virtual
+  environments}.
+\newblock Springer, 1999.
+
+\bibitem[ND{\etalchar{+}}14]{survey}
+Thi Thuong~Huyen Nguyen, Thierry Duval, et~al.
+\newblock A survey of communication and awareness in collaborative virtual
+  environments.
+\newblock In {\em 2014 International Workshop on Collaborative Virtual
+  Environments (3DCVE)}, 2014.
+
+\bibitem[Ngu14]{thesis}
+Thi Thuong~Huyen Nguyen.
+\newblock {\em Proposition of new metaphors and techniques for 3D interaction
+  and navigation preserving immersion and facilitating collaboration between
+  distant users}.
+\newblock PhD thesis, INSA Rennes, 2014.
+
+\end{thebibliography}
