@@ -1,8 +1,8 @@
 \select@language {french}
 \contentsline {section}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {2}\textit {Awareness}}{2}
-\contentsline {subsection}{\numberline {2.1}\textit {Awareness} d'\IeC {\'e}v\IeC {\'e}nements}{3}
-\contentsline {subsection}{\numberline {2.2}Facilitation de t\IeC {\^a}ches}{5}
+\contentsline {subsection}{\numberline {2.1}Compr\IeC {\'e}hension de l'environnement et des \IeC {\'e}v\IeC {\'e}nements}{3}
+\contentsline {subsection}{\numberline {2.2}Guidage}{5}
 \contentsline {section}{\numberline {3}Interagir avec l'environnement}{7}
 \contentsline {subsection}{\numberline {3.1}Manipulation d'objets}{7}
 \contentsline {subsubsection}{\numberline {3.1.1}Exploitation des 6DDL}{7}
