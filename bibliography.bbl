@@ -47,6 +47,12 @@ Mike Fraser, Steve Benford, Jon Hindmarsh, and Christian Heath.
 \newblock In {\em Proceedings of the 12th annual ACM symposium on User
   interface software and technology}, pages 27--36. ACM, 1999.
 
+\bibitem[FG06]{trv4-intro}
+Philippe Fuchs and Pascal Guitton.
+\newblock Introduction {\`a} la r{\'e}alit{\'e} virtuelle.
+\newblock {\em Le trait{\'e} de la r{\'e}alit{\'e} virtuelle-3{\`e}me
+  {\'e}dition}, pages Volume--4, 2006.
+
 \bibitem[GB95]{massive}
 Chris Greenhalgh and Steven Benford.
 \newblock Massive: a collaborative virtual environment for teleconferencing.
