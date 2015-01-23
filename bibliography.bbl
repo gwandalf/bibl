@@ -28,6 +28,12 @@ James Cremer, Joseph Kearney, and Yiannis Papelis.
 \newblock {\em ACM Transactions on Modeling and Computer Simulation (TOMACS)},
   5(3):242--267, 1995.
 
+\bibitem[DR14]{polly}
+Ignacio~X Dom{\i}nguez and David~L Roberts.
+\newblock Asymmetric virtual environments: Exploring the effects of avatar
+  colors on performance.
+\newblock 2014.
+
 \bibitem[DZ{\etalchar{+}}06]{network-errors}
 Thierry Duval, Chadi Zammar, et~al.
 \newblock Managing network troubles while interacting within collaborative
