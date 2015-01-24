@@ -12,6 +12,12 @@ Fernando Argelaguet~Sanz, Andr{\'e} Kunert, Alexander Kulik, Bernd Froehlich,
 \newblock Improving co-located collaboration with show-through techniques.
 \newblock 2010.
 
+\bibitem[CFH97]{2-hands}
+Lawrence~D Cutler, Bernd Fr{\"o}hlich, and Pat Hanrahan.
+\newblock Two-handed direct manipulation on the responsive workbench.
+\newblock In {\em Proceedings of the 1997 symposium on Interactive 3D
+  graphics}, pages 107--114. ACM, 1997.
+
 \bibitem[CGBA14]{seven}
 Guillaume Claude, Val{\'e}rie Gouranton, Rozenn~Bouville Berthelot, and Bruno
   Arnaldi.

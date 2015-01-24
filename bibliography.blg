@@ -5,45 +5,45 @@ The style file: alpha.bst
 Database file #1: bibliography.bib
 Warning--empty journal in show-through
 Warning--empty journal in polly
-You've used 18 entries,
+You've used 19 entries,
             2543 wiz_defined-function locations,
-            655 strings with 7908 characters,
-and the built_in function-call counts, 8072 in all, are:
-= -- 804
-> -- 441
-< -- 10
-+ -- 162
-- -- 158
-* -- 571
-:= -- 1331
-add.period$ -- 57
-call.type$ -- 18
-change.case$ -- 119
-chr.to.int$ -- 18
-cite$ -- 20
-duplicate$ -- 320
-empty$ -- 548
-format.name$ -- 173
-if$ -- 1656
+            661 strings with 8105 characters,
+and the built_in function-call counts, 8658 in all, are:
+= -- 868
+> -- 466
+< -- 11
++ -- 171
+- -- 167
+* -- 609
+:= -- 1416
+add.period$ -- 61
+call.type$ -- 19
+change.case$ -- 126
+chr.to.int$ -- 19
+cite$ -- 21
+duplicate$ -- 346
+empty$ -- 592
+format.name$ -- 183
+if$ -- 1788
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 20
-newline$ -- 94
-num.names$ -- 54
-pop$ -- 131
+missing$ -- 21
+newline$ -- 99
+num.names$ -- 57
+pop$ -- 140
 preamble$ -- 1
-purify$ -- 141
+purify$ -- 149
 quote$ -- 0
-skip$ -- 281
+skip$ -- 304
 stack$ -- 0
-substring$ -- 391
-swap$ -- 74
-text.length$ -- 10
+substring$ -- 430
+swap$ -- 85
+text.length$ -- 11
 text.prefix$ -- 2
 top$ -- 0
-type$ -- 132
+type$ -- 140
 warning$ -- 2
-while$ -- 78
-width$ -- 21
-write$ -- 233
+while$ -- 84
+width$ -- 22
+write$ -- 247
 (There were 2 warnings)
