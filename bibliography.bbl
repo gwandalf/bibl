@@ -116,6 +116,14 @@ M{\'a}rcio~S Pinho, Doug~A Bowman, and Carla~MDS Freitas.
 \newblock In {\em Proceedings of the ACM symposium on Virtual reality software
   and technology}, pages 171--178. ACM, 2002.
 
+\bibitem[PHM{\etalchar{+}}03]{constrained-scenario}
+Michal Ponder, Bruno Herbelin, Tom Molet, Sebastien Schertenlieb, Branislav
+  Ulicny, George Papagiannakis, Nadia Magnenat-Thalmann, and Daniel Thalmann.
+\newblock Immersive vr decision training: telling interactive stories featuring
+  advanced virtual human simulation technologies.
+\newblock In {\em Proceedings of the workshop on Virtual environments 2003},
+  pages 97--106. ACM, 2003.
+
 \bibitem[PHM09]{jedi}
 Jorge Pe{\~n}a, Jeffrey~T Hancock, and Nicholas~A Merola.
 \newblock The priming effects of avatars in virtual settings.
