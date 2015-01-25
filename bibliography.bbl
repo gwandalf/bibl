@@ -45,6 +45,12 @@ Carolina Cruz-Neira, Daniel~J Sandin, Thomas~A DeFanti, Robert~V Kenyon, and
 \newblock The cave: audio visual experience automatic virtual environment.
 \newblock {\em Communications of the ACM}, 35(6):64--72, 1992.
 
+\bibitem[DB92]{awareness-coordination}
+Paul Dourish and Victoria Bellotti.
+\newblock Awareness and coordination in shared workspaces.
+\newblock In {\em Proceedings of the 1992 ACM conference on Computer-supported
+  cooperative work}, pages 107--114. ACM, 1992.
+
 \bibitem[DR14]{polly}
 Ignacio~X Dom{\i}nguez and David~L Roberts.
 \newblock Asymmetric virtual environments: Exploring the effects of avatar
@@ -57,12 +63,26 @@ Thierry Duval, Chadi Zammar, et~al.
   virtual environments.
 \newblock In {\em CSAC}, pages 85--94, 2006.
 
+\bibitem[End95]{environment-awareness}
+Mica~R Endsley.
+\newblock Toward a theory of situation awareness in dynamic systems.
+\newblock {\em Human Factors: The Journal of the Human Factors and Ergonomics
+  Society}, 37(1):32--64, 1995.
+
 \bibitem[FBHH99]{fraser}
 Mike Fraser, Steve Benford, Jon Hindmarsh, and Christian Heath.
 \newblock Supporting awareness and interaction through collaborative virtual
   interfaces.
 \newblock In {\em Proceedings of the 12th annual ACM symposium on User
   interface software and technology}, pages 27--36. ACM, 1999.
+
+\bibitem[FCD{\etalchar{+}}10]{barrier}
+C{\'e}dric Fleury, Alain Chauffaut, Thierry Duval, Val{\'e}rie Gouranton, Bruno
+  Arnaldi, et~al.
+\newblock A generic model for embedding users' physical workspaces into
+  multi-scale collaborative virtual environments.
+\newblock In {\em ICAT 2010 (20th International Conference on Artificial
+  Reality and Telexistence)}, 2010.
 
 \bibitem[FG06]{trv4-intro}
 Philippe Fuchs and Pascal Guitton.
