@@ -65,6 +65,12 @@ Ignacio~X Dom{\i}nguez and David~L Roberts.
   colors on performance.
 \newblock 2014.
 
+\bibitem[DWE03]{cutaway}
+Joachim Diepstraten, Daniel Weiskopf, and Thomas Ertl.
+\newblock Interactive cutaway illustrations.
+\newblock In {\em Computer Graphics Forum}, volume~22, pages 523--532. Wiley
+  Online Library, 2003.
+
 \bibitem[DZ{\etalchar{+}}06]{network-errors}
 Thierry Duval, Chadi Zammar, et~al.
 \newblock Managing network troubles while interacting within collaborative
