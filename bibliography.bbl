@@ -6,6 +6,11 @@ Laurent Aguerreche, Thierry Duval, Anatole L{\'e}cuyer, et~al.
 \newblock Short paper: 3-hand manipulation of virtual objects.
 \newblock {\em JVRC 2009}, 2009.
 
+\bibitem[AFT03]{trv1-chap1}
+Bruno Arnaldi, Philippe Fuchs, and Jacques Tisseau.
+\newblock Chapitre 1 du volume 1 du trait{\'e} de la r{\'e}alit{\'e} virtuelle.
+\newblock {\em Les presses de l’{\'e}cole de Mines de Paris}, 2003.
+
 \bibitem[ASKK{\etalchar{+}}10]{show-through}
 Fernando Argelaguet~Sanz, Andr{\'e} Kunert, Alexander Kulik, Bernd Froehlich,
   et~al.
@@ -33,6 +38,12 @@ James Cremer, Joseph Kearney, and Yiannis Papelis.
   environments.
 \newblock {\em ACM Transactions on Modeling and Computer Simulation (TOMACS)},
   5(3):242--267, 1995.
+
+\bibitem[CNSD{\etalchar{+}}92]{cave}
+Carolina Cruz-Neira, Daniel~J Sandin, Thomas~A DeFanti, Robert~V Kenyon, and
+  John~C Hart.
+\newblock The cave: audio visual experience automatic virtual environment.
+\newblock {\em Communications of the ACM}, 35(6):64--72, 1992.
 
 \bibitem[DR14]{polly}
 Ignacio~X Dom{\i}nguez and David~L Roberts.
