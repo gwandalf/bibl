@@ -51,6 +51,14 @@ Paul Dourish and Victoria Bellotti.
 \newblock In {\em Proceedings of the 1992 ACM conference on Computer-supported
   cooperative work}, pages 107--114. ACM, 1992.
 
+\bibitem[DNF{\etalchar{+}}13]{guidage}
+Thierry Duval, Thi Thuong~Huyen Nguyen, C{\'e}dric Fleury, Alain Chauffaut,
+  Georges Dumont, and Val{\'e}rie Gouranton.
+\newblock Improving awareness for 3d virtual collaboration by embedding the
+  features of users’ physical environments and by augmenting interaction
+  tools with cognitive feedback cues.
+\newblock {\em Journal on Multimodal User Interfaces}, pages 1--11, 2013.
+
 \bibitem[DR14]{polly}
 Ignacio~X Dom{\i}nguez and David~L Roberts.
 \newblock Asymmetric virtual environments: Exploring the effects of avatar
