@@ -6,45 +6,45 @@ Database file #1: bibliography.bib
 Warning--empty journal in show-through
 Warning--empty journal in polly
 Warning--can't use both volume and number fields in cutaway
-You've used 27 entries,
+You've used 28 entries,
             2543 wiz_defined-function locations,
-            705 strings with 10033 characters,
-and the built_in function-call counts, 12769 in all, are:
-= -- 1277
-> -- 708
+            709 strings with 10322 characters,
+and the built_in function-call counts, 13337 in all, are:
+= -- 1326
+> -- 768
 < -- 17
-+ -- 261
-- -- 255
-* -- 923
-:= -- 2085
-add.period$ -- 88
-call.type$ -- 27
-change.case$ -- 191
-chr.to.int$ -- 27
-cite$ -- 30
-duplicate$ -- 500
-empty$ -- 859
-format.name$ -- 276
-if$ -- 2635
++ -- 284
+- -- 278
+* -- 976
+:= -- 2195
+add.period$ -- 91
+call.type$ -- 28
+change.case$ -- 206
+chr.to.int$ -- 28
+cite$ -- 31
+duplicate$ -- 511
+empty$ -- 877
+format.name$ -- 299
+if$ -- 2736
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 29
-newline$ -- 139
-num.names$ -- 81
-pop$ -- 205
+newline$ -- 144
+num.names$ -- 84
+pop$ -- 217
 preamble$ -- 1
-purify$ -- 222
+purify$ -- 237
 quote$ -- 0
-skip$ -- 432
+skip$ -- 441
 stack$ -- 0
-substring$ -- 636
+substring$ -- 643
 swap$ -- 129
 text.length$ -- 17
 text.prefix$ -- 3
 top$ -- 0
-type$ -- 204
+type$ -- 212
 warning$ -- 3
-while$ -- 123
-width$ -- 32
-write$ -- 353
+while$ -- 126
+width$ -- 33
+write$ -- 366
 (There were 3 warnings)
