@@ -1,13 +1,13 @@
 \select@language {french}
 \contentsline {section}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {2}\textit {Awareness} et interaction}{3}
-\contentsline {subsection}{\numberline {2.1}Compr\IeC {\'e}hension de l'environnement et des \IeC {\'e}v\IeC {\'e}nements}{4}
-\contentsline {subsection}{\numberline {2.2}Guidage}{6}
-\contentsline {subsection}{\numberline {2.3}Manipulation d'objets}{7}
-\contentsline {subsubsection}{\numberline {2.3.1}Exploitation des 6DDL}{8}
+\contentsline {section}{\numberline {2}\textit {Awareness} et interactions}{3}
+\contentsline {subsection}{\numberline {2.1}Compr\IeC {\'e}hension de l'environnement et des \IeC {\'e}v\IeC {\'e}nements}{3}
+\contentsline {subsection}{\numberline {2.2}Guidage}{5}
+\contentsline {subsection}{\numberline {2.3}Manipulation d'objets}{6}
+\contentsline {subsubsection}{\numberline {2.3.1}Exploitation des 6DDL}{6}
 \contentsline {subsubsection}{\numberline {2.3.2}Prise en compte de l'influence d'un coop\IeC {\'e}rateur}{8}
-\contentsline {section}{\numberline {3}Aspects sociaux}{9}
-\contentsline {section}{\numberline {4}Gestion automatique de l'apprentissage et des interactions collaboratives}{10}
-\contentsline {subsection}{\numberline {4.1}Sc\IeC {\'e}nario d'apprentissage}{10}
+\contentsline {section}{\numberline {3}Aspects sociaux}{8}
+\contentsline {section}{\numberline {4}Gestion automatique de l'apprentissage et des interactions collaboratives}{9}
+\contentsline {subsection}{\numberline {4.1}Sc\IeC {\'e}nario d'apprentissage}{9}
 \contentsline {subsection}{\numberline {4.2}Synchronisation des interactions collaboratives}{12}
-\contentsline {section}{\numberline {5}Conclusion}{14}
+\contentsline {section}{\numberline {5}Conclusion}{13}
