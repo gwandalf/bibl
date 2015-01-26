@@ -9,5 +9,5 @@
 \contentsline {section}{\numberline {3}Aspects sociaux}{8}
 \contentsline {section}{\numberline {4}Gestion automatique de l'apprentissage et des interactions collaboratives}{9}
 \contentsline {subsection}{\numberline {4.1}Sc\IeC {\'e}nario d'apprentissage}{9}
-\contentsline {subsection}{\numberline {4.2}Synchronisation des interactions collaboratives}{12}
+\contentsline {subsection}{\numberline {4.2}Synchronisation des interactions collaboratives}{11}
 \contentsline {section}{\numberline {5}Conclusion}{13}
